@@ -15,20 +15,24 @@
 
 
 #Entrada do valor da meta:
-valorMeta = float(input("Qual sua meta? "))
+valorMeta = float(input("Qual sua meta? ")) 
+while(valorMeta<0):  
+    valorMeta = float(input("Valor incorreto, digite nova meta: "))
+
+
 
 #Entrada do valor economizado por mês:
 depositoMensal = float(input("Quanto pode poupar por mes? "))
+while(depositoMensal<0):  
+    depositoMensal = float(input("Valor incorreto, digite novo valor de deposito mensal: "))
 
 #Processamento da divisão de meta por valor economizado por mês:
-if(valorMeta % depositoMensal > 4):
-  tempo = valorMeta / depositoMensal + 1
-else:
-  tempo = valorMeta / depositoMensal
+
+tempo = valorMeta / depositoMensal + 1 if valorMeta % depositoMensal > 4 else valorMeta / depositoMensal
 tempo = int((tempo))
 
 #Saída de impressão na tela com anos e meses necessários para alcançar meta:
-print(f"Olá! Com uma meta de R${valorMeta:,.2f} e economizando R${depositoMensal:,.2f} por mês, o tempo de espera será de: ")
+print(f"Perfeito! Com uma meta de R${valorMeta:,.2f} e economizando R${depositoMensal:,.2f} por mês, o tempo de espera será de: ")
 if (tempo<12):
   print(f"{tempo} meses.")
 elif(tempo % 12 == 0):

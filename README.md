@@ -4,4 +4,4 @@
 
 <a href = "https://colab.research.google.com/drive/1xcbW6xSpaREBqMxcJU40QZ8SgZL3Ej5W?usp=sharing"> Link de acesso ao Colab.
 
-<a href = ""> Link de acesso ao Vídeo.
+<a href = "https://www.youtube.com/watch?v=0_xs8vfhkWg"> Link de acesso ao Vídeo.
